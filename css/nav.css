@@ -59,3 +59,7 @@ ul {
     position: sticky;
     top: 0;
   }
+
+  #setting_icon{
+    padding: 1px;
+  }
