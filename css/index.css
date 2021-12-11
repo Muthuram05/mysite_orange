@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(235, 210, 177);
+}
+    
+#first{
+    text-align: center;
+   
+    font-size: 40px;
+    color: rgb(255, 123, 0);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:bolder;
+
+}
+
+
+
+ 
+
+#apps{
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+#web_or_ad{
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+
+#logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:80px;
+}
+#quots{
+  text-align: center;
+}
+.and,.wb{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
+.android_web{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+.button{
+ 
+  display: flex;  
+  justify-content: center;  
+  align-items: center;    
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(235, 199, 133);
+  font-size: 50px;
+  text-decoration: none;
+  text-shadow: 30px;
+}
+
+
+  
