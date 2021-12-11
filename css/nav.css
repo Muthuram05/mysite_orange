@@ -42,7 +42,7 @@ ul {
   
   /* Change the link color to #111 (black) on hover */
   li a:hover {
-    background-color: #111;
+    background-color: rgb(255, 94, 0);
   }
   li {
     border-right: 1px solid #bbb;
