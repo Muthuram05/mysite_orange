@@ -17,4 +17,18 @@ body{
     height: 500px;
     background-color: rgb(219, 179, 126);
     border-radius: 15px;
+    overflow: hidden;
+    padding: 30px;
+    
+}
+input[type=text],select,#range,textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline;
+    border: 1px solid rgb(235, 210, 177) ;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+
 }

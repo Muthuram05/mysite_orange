@@ -6,42 +6,76 @@
         <link rel="stylesheet" href="../css/forms.css">
         <link rel="stylesheet" href="../css/index.css">
 
+
     </head>
     <body>
-        <form>
-            <div class="text_center">
-            <div><br>
-                <label for="fname">Name:</label><br>
-                <input type="text" id="fname" name="fname" placeholder="yourname" ><br>
-            </div>
-            <div>
-            <label for="mail">Email:</label><br>
-            <input type="text" id="Email" name="Email" placeholder="example@gmail.com"><br>
-            </div>
-            <div>
+        <form action="sucess.html" onclick="return check()" autocomplete="off">
+            <table class="text_center">
+                    <tr>
 
-                <label for="comments" id="comments">DIRCIPTIONS:</label><br>
-                <textarea name="comments">
+                        <td><label for="fname">Name:<span>**</span></label></td>
+                        <td><input type="text" id="fname" name="fname" placeholder="yourname" ></td>
                     
-                </textarea>
-            </div>
-            <div>
-            <label for="contact_no" id="contact_no">contact_no:</label><br>
-            <input type="text" id="text" name="contact_no" placeholder="1234567891"><br>
-            </div>
-            <div>
-            <label for="whichapp" id="whichapp">whichapp</label><br>
-            <input type="radio" id="android" name="fav_app" value="" >
-            <label for="ANDROID" >ANDROID APP</label><br>
-            <input type="radio" id="css" name="fav_app">
-            <label for="WEB">WEBAPP</label><br>
-            </div>
-            <label for="range" id="range">range:(eg-10000 to 100000)</label><br>
-            <input type="number" id="range" name="range" value="10000">
-            
+                    </tr>
+                    <tr>
+                         <td><label for="mail">Email:<span>**</span></label><br></td>
+                         <td><input type="text" id="Email" name="Email" placeholder="example@gmail.com"></td>
+                    </tr>
+                    <tr>
+                     
+                          <td><label for="comments" id="comments">DIRCIPTIONS:</label></td>
+                          <td><textarea name="comments"></textarea></td>
+                        
+                    </tr>
+                    
+                    <tr>
+                    
+                        <td><label for="contact_no" id="contact_no">contact_no:<span>**</span></label></td> 
+                        <td><input type="text" id="text" name="contact_no" placeholder="1234567891"></td>
+                    </tr>
+                    <tr>
+                            <td><label for="which work">which works</label></td>
+                             <td><select id="whick work" name="which work">
+                             <option value="web site">web site</option>
+                             <option value="web app">web app</option>
+                             <option value="android app">android apps</option></select></td>
 
-            <a href="sucess.html">submit</a>
-           </div>
+                         
+                    </tr>
+                    <tr>
+                        <td><label for="what is your range">what is your range</label></td>
+                        <td><input id="range" type="number" value="5000"></td>
+
+                    </tr>
+
+
+
+                    
+        
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="submit"></td>
+                    </tr>
+                   </div>
+
+            </table>
+            
+           <script>
+            function check()
+                {
+                    NAME= document.getElementById("fname").Value;
+                    mobile=document.getElementById("contact_no").Value;
+                    if(NAME=="")
+                    {
+                        alert("please full a name");
+                        return false;
+                    }
+                    else if(mobile=="")
+                    {
+                        alert("please full a mobile");
+                    }
+                }
+            </script>
 
 
             
