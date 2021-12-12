@@ -8,11 +8,21 @@
             text-align: center;
         }
         #call{
-            color: orange;
+            color: rgb(42, 165, 42);
             text-decoration: none;
             font-size: 300%;
 
            
+        }
+        #mail{
+            color: lightskyblue;
+            text-decoration: none;
+            font-size: 300%;
+        }
+        #sms{
+            color: green;
+            text-decoration: none;
+            font-size: 300%;
         }
         body{
     display: flex;
@@ -31,9 +41,31 @@
              padding: 30px;
     
         }
+
+        #call-tab{
+            position: relative;
+             background-color: rgb(56, 219, 23);
+             border-radius: 15px;
+
+        }
+        #mail-tab
+        {
+            background-color: lightskyblue;
+        }
+        #sms-tab{
+            background-color: green;
+        }
 td{
     text-align: center;
+    width: 100%;
+    height: 100%;
 }
+     #mail{
+         color: blue;
+     }
+     #sms{
+         color: darkgreen;
+     }
 
 
         
@@ -43,24 +75,29 @@ td{
     <body>
         <div id="full_div">
            <h1>FOR MORE INFORMATION</h1><BR>
-        <table>
-            <tr>
+        <table id="call-tab" >
+            <tr >
+               <td><a href="tel:7708479368" id="call">Call to</a></td>
                <td><img src="../image/call_bg.png"></td>
-               <td><a href="tel:7708479368" id="call">call</a></td>
             </tr>
+        </table><br>
+        <table id="mail-tab">
             <tr>
+               <td><a href="mailto:mr032495@gmail.com" id="mail">Mail to</a></td>
                <td><img src="../image/mail-bg.png"></td>
-               <td><a href="mailto:mr032495@gmail.com" id="mail">mail to</a></td>
             </tr>
+        </table>
+        <table id="sms-tab">
             <tr>
+                <td><a href="smsto:917708479368" id="sms">Send sms</a></td>
                 <td><img src="../image/msg_bg .png"></td>
-                <td><a href="smsto:917708479368" id="sms">send sms</a><br></td>
             </tr>
+        </table>
 
 
          
            
-        </table>
+       
         </div>
     </body>
 </html>
