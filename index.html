@@ -1,50 +1,46 @@
-<html>
-    <head>
-        <title>
-            APP CREATIONS
-        </title>
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/nav.css">
-        <link rel="icon" href="image/th.jpg">
-    </head>
-    <body>
-        <img id="logo" src="image/final_logo-fix.png" title="logo">
-        <h1 id="first">ORANGE</h1><br>
-        <DIV id="quots">
-          WE ARE DESIGNERS WE ARE NOT GODS.
-        </DIV><br>
-        <ul>
-            <li  id="menu_icon" ><a href="html/sign_up.html"><img width="20px" height="20px"  src="image/menu_remove.png" title="menu"></a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="html/status.html">Status</a></li>
-            <li><a href="html/contact.html">Contact</a></li>
-            <li ><a  href="html/about.html">About</a></li>
-            <li  id="setting_icon" style="float:right" ><a href="#"><img width="20px" height="20px"  src="image/setting.png" title="setting"></a></li>
-        </ul>
-        <h1 id="apps">
-            YOU WANT TO ANY APPS
-        </h1>
-        <H1 id="web_or_ad">
-            ANDROID APPLICATION (OR) WEB APPLICATION
-        </h1>
-        <hr>
-        <div class="anpply_form">
-        <div >
-            <div><h1 class="and">ANDROID APPS</h1></div>
-            <img src="image/android.jpg" alt="android.jpg" title="ANDROID apps" class="android_web"><br>
-            
+<!DOCTYPE html>
+<head>
+<title>Register </title>
+<link rel="stylesheet" href="css/login.css">
+</head>
 
-        </div>
-        <div>
-            <div><h1 class="wb">WEBWORKS</h1></div>
-            <img src="image/webapp.jpg" alt="web.jpg" title="WEBWORKS" class="android_web" width="50%"><br>
-            <a href="html/apply_form.html" class="button">apply</a>
-        </div>
+
+<body>
+
+    <div class="box">
+   
+
+        <h1>Register Here</h1>
+
+        <form name="myform2" action="php/register.php" method="POST">
+
+            <p>Username</p>
+            <input type="text" name="Uname" placeholder="Enter Username" required="">
+
+            <p>Email</p>
+            <input type="Email" name="Email" placeholder="Enter email id" required="">
+
+            <p>Password</p>
+            <input type="password" name="passward1" placeholder="Enter Password" required="">
+
+            <p>Retype Password</p>
+            <input type="password" name="passward2" placeholder="Re-Enter Password" required="">
+
+            <input type="submit" name="" value="Register">
+
+            <br><br>
+            <a href="html/login.html">existing user, login !?</a>
+        </form>
+        
     </div>
+    <script>
+        function preventBack(){
+            window.history.forward()
+        };
+        setTimeout("preventBack()",0);window.onunload=function(){null;}
+        </script>
 
 
-        
-        
+</body>
 
-    </body>
 </html>
